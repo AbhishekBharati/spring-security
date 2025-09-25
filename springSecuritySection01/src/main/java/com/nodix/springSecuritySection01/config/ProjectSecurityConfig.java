@@ -50,7 +50,7 @@ public class ProjectSecurityConfig {
 //        This InMemoryUserDetailsManager is implemented by SpringTeam and it helps us to store the users in Memory
 //        Also This will store the users in a HashMap you can go inside and see it's implementation.
         return new InMemoryUserDetailsManager(user, admin);
-    }
+}
 
 //    Because of this bean we don't need to write {noop} anymore before the password coz this time it'll use the encryption method that this bean returns.
     @Bean
